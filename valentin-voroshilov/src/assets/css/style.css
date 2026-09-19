@@ -732,6 +732,24 @@ body{ padding-bottom: 60px; }
   opacity:0.7;
 }
 
+.venue-list{
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:center;
+     align-items:center;
+     gap: var(--space-3) var(--space-6);
+     list-style:none;
+     padding:0;
+     margin: var(--space-5) 0 0;
+}
+.venue-item{
+     font-family: var(--font-serif);
+     font-size: clamp(1.05rem, 0.4vw + 0.95rem, 1.3rem);
+     letter-spacing: 0.02em;
+     color: inherit;
+     opacity: 0.85;
+}
+
 /* -----------------------------------------------------------
    12. GALLERY
    ----------------------------------------------------------- */
