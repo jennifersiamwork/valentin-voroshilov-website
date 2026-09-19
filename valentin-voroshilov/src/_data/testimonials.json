@@ -1,6 +1,6 @@
 [
-  { "id": "t1", "quote": "", "clientName": "", "eventType": "Wedding", "location": "", "photo": null, "isPlaceholder": true },
-  { "id": "t2", "quote": "", "clientName": "", "eventType": "Corporate Event", "location": "", "photo": null, "isPlaceholder": true },
-  { "id": "t3", "quote": "", "clientName": "", "eventType": "Private Event", "location": "", "photo": null, "isPlaceholder": true },
-  { "id": "t4", "quote": "", "clientName": "", "eventType": "Hotel / Resort", "location": "", "photo": null, "isPlaceholder": true }
+    { "id": "t1", "quote": "Thank you so much for your beautiful music! Our guests loved it and so did we! Such a great added extra to our special day. You were fun and professional, with fantastic communication before and during your performance. We are so thrilled to have had you at our wedding!", "clientName": "Mrs & Mrs Ollerenshaw", "eventType": "Wedding", "location": "", "photo": null },
+    { "id": "t2", "quote": "Thank you so much, Valentin, for fulfilling our wedding day. You were fantastic and professional, and you even made our day more romantic. Everyone was so deeply touched by the music. Thank you so much again.", "clientName": "Jann & Paul", "eventType": "Wedding", "location": "", "photo": null },
+    { "id": "t3", "quote": "We just celebrated our 1st wedding anniversary last weekend and all the guests from the wedding still talk about your performance! You definitely made our day extra special.", "clientName": "Mila Chausova", "eventType": "Wedding", "location": "", "photo": null },
+    { "id": "t4", "quote": "Thank you so much for being a part of our most important moments. Everyone loved your performance too — the best!", "clientName": "Richie Limson", "eventType": "Wedding", "location": "", "photo": null }
 ]
