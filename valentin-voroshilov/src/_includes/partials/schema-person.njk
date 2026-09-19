@@ -1,0 +1,22 @@
+{%- set sameAsLinks = [site.instagramUrl] -%}
+{%- if "PLACEHOLDER" not in site.tiktokUrl %}{%- set sameAsLinks = (sameAsLinks.concat([site.tiktokUrl])) -%}{%- endif -%}
+{%- set personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": site.name,
+  "jobTitle": site.role,
+  "description": site.description,
+  "url": site.url,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": site.locationCity,
+    "addressCountry": site.locationCountry
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": site.credentials.educationFull
+  },
+  "sameAs": sameAsLinks,
+  "knowsAbout": ["Violin performance", "Classical music", "Live event entertainment", "Wedding music", "Corporate event entertainment"]
+} -%}
+<script type="application/ld+json">{{ personSchema | dump | safe }}</script>

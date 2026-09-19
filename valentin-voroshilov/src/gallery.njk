@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+title: "Gallery | Valentin Voroshilov, Violinist"
+description: "Photography and video from Valentin Voroshilov's performances at weddings, corporate events, concerts and private occasions in Thailand and worldwide."
+permalink: /gallery/
+bodyClass: page-gallery
+eyebrow: "Gallery"
+headline: "Gallery"
+lead: "A visual record of performances across weddings, corporate events, concerts and private occasions."
+headerImage: "/assets/images/ph/gallery-header.svg"
+---
+
+{% include "partials/page-header.njk" %}
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar" role="tablist" aria-label="Filter gallery by category" data-filter-bar>
+      {%- for cat in gallery.categories %}
+      <button type="button" class="filter-btn {% if loop.first %}is-active{% endif %}" data-filter="{{ cat.key }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">{{ cat.label }}</button>
+      {%- endfor %}
+    </div>
+
+    <div class="gallery-grid" data-gallery>
+      {%- for item in gallery.items %}
+      <a href="{{ item.image }}" class="gallery-item size-{{ item.size }}" data-category="{{ item.category }}" data-lightbox data-caption="{{ item.caption }}">
+        <img src="{{ item.image }}" alt="{{ item.caption }} — photography placeholder" loading="lazy" width="1200" height="1500">
+        <span class="gallery-caption">{{ item.caption }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="placeholder-note" style="margin-top: var(--space-4);">All images shown are placeholders reserved for final event photography. Replace files in <code>src/assets/images/gallery/</code> and update <code>src/_data/gallery.json</code> to publish real photos.</p>
+  </div>
+</section>
+
+<section class="section section--alt" id="video">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Video</p>
+      <h2>Performances in Motion</h2>
+      <p class="text-muted">Instagram, TikTok, YouTube and uploaded performance videos can be embedded here as they become available.</p>
+    </div>
+    <div class="video-grid">
+      {%- for v in videos %}
+      <div class="video-card">
+        <div class="video-embed {% if v.orientation == 'vertical' %}ratio-vertical{% endif %}">
+          {%- if v.embedUrl %}
+          <iframe src="{{ v.embedUrl }}" title="{{ v.title }}" loading="lazy" allowfullscreen></iframe>
+          {%- else %}
+          <div class="video-placeholder">
+            <span class="play-ring" aria-hidden="true">▶</span>
+            <span>{{ v.platform }} video placeholder</span>
+            <span class="text-muted" style="font-size:0.7rem;">Add embed link in videos.json</span>
+          </div>
+          {%- endif %}
+        </div>
+        <div class="video-meta">
+          <span class="video-cat">{{ v.platform }} · {{ v.category }}</span>
+          <h3>{{ v.title }}</h3>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" data-lightbox-root aria-hidden="true">
+  <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close">Close ✕</button>
+  <button type="button" class="lightbox-prev" data-lightbox-prev aria-label="Previous image">← Prev</button>
+  <figure>
+    <img src="" alt="" data-lightbox-image>
+    <figcaption data-lightbox-caption></figcaption>
+  </figure>
+  <button type="button" class="lightbox-next" data-lightbox-next aria-label="Next image">Next →</button>
+</div>
+
+{% include "partials/cta-band.njk" %}

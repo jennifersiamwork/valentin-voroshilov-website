@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: "Selected Work | Valentin Voroshilov, Violinist"
+description: "Notable performances and events featuring violinist Valentin Voroshilov, including corporate, brand, wedding and private engagements."
+permalink: /previous-work/
+bodyClass: page-previous-work
+eyebrow: "Portfolio"
+headline: "Selected Work"
+lead: "A running record of notable performances and events. New projects are added here as they are completed."
+headerImage: "/assets/images/ph/previous-work-header.svg"
+---
+
+{% include "partials/page-header.njk" %}
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar" role="tablist" aria-label="Filter by event type" data-filter-bar>
+      <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button type="button" class="filter-btn" data-filter="Corporate" role="tab" aria-selected="false">Corporate</button>
+      <button type="button" class="filter-btn" data-filter="Weddings" role="tab" aria-selected="false">Weddings</button>
+      <button type="button" class="filter-btn" data-filter="Concerts" role="tab" aria-selected="false">Concerts</button>
+      <button type="button" class="filter-btn" data-filter="Brand Events" role="tab" aria-selected="false">Brand Events</button>
+      <button type="button" class="filter-btn" data-filter="Private Events" role="tab" aria-selected="false">Private Events</button>
+      <button type="button" class="filter-btn" data-filter="Hotels & Resorts" role="tab" aria-selected="false">Hotels &amp; Resorts</button>
+    </div>
+
+    <div class="event-list" data-gallery>
+      {%- for event in events %}
+      <div class="event-row {% if loop.index0 is odd %}reverse{% endif %} {% if event.isTemplate %}is-template{% endif %}" data-category="{{ event.eventType }}">
+        <div class="event-media">
+          <div class="media-frame ratio-landscape {% if not event.isTemplate %}hover-zoom{% endif %}">
+            <img src="{{ event.image }}" alt="{{ event.eventName }} — photography placeholder" loading="lazy" width="1400" height="900">
+          </div>
+        </div>
+        <div class="event-body">
+          <p class="eyebrow">{{ event.eventType }} {% if event.date %}&middot; {{ event.date }}{% endif %}</p>
+          <h2 class="h3">{{ event.eventName }}</h2>
+          <div class="event-meta">
+            <span>{{ event.location }}</span>
+          </div>
+          <p>{{ event.description }}</p>
+          {%- if event.isTemplate %}
+          <p class="placeholder-note">Template entry — duplicate this record in <code>src/_data/events.json</code> to add a new project.</p>
+          {%- endif %}
+        </div>
+      </div>
+      {%- if not event.isTemplate %}
+      <script type="application/ld+json">{{ {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": event.eventName,
+        "location": { "@type": "Place", "name": event.location },
+        "description": event.description
+      } | dump | safe }}</script>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container container--text text-center">
+    <p class="eyebrow eyebrow--center">Adding New Work</p>
+    <h2>Building a Growing Record</h2>
+    <p class="lead" style="margin-top: var(--space-3);">Each completed engagement can be added here with its own details, photography and video, keeping this an accurate and current portfolio.</p>
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

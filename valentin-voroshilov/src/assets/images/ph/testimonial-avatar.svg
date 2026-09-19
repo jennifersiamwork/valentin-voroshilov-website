@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label=" placeholder image">
+  <defs>
+    <linearGradient id="g730" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#efeadf"/>
+      <stop offset="100%" stop-color="#ddd6c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#g730)"/>
+  <circle cx="204.0" cy="114.0" r="84.0" fill="none" stroke="rgba(10,10,9,0.14)" stroke-width="1" /><circle cx="204.0" cy="114.0" r="132.0" fill="none" stroke="rgba(10,10,9,0.14)" stroke-width="1" /><circle cx="204.0" cy="114.0" r="180.0" fill="none" stroke="rgba(10,10,9,0.14)" stroke-width="1" />
+  <rect x="0.5" y="0.5" width="299" height="299" fill="none" stroke="rgba(10,10,9,0.14)" stroke-width="1"/>
+  <g font-family="Georgia, 'DejaVu Serif', serif" text-anchor="middle">
+    <text x="150.0" y="147.6" font-size="12.0" fill="#0a0a09" letter-spacing="1"></text>
+    <text x="150.0" y="164.136" font-size="7.4" fill="#726e63" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" letter-spacing="2.5">PHOTO</text>
+  </g>
+</svg>

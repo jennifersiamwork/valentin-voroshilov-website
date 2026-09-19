@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="SELECTED PERFORMANCE placeholder image">
+  <defs>
+    <linearGradient id="g492" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b17"/>
+      <stop offset="100%" stop-color="#0a0a09"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#g492)"/>
+  <circle cx="952.0" cy="380.0" r="280.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="952.0" cy="380.0" r="440.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="952.0" cy="380.0" r="600.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" />
+  <rect x="0.5" y="0.5" width="1399" height="999" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1"/>
+  <g font-family="Georgia, 'DejaVu Serif', serif" text-anchor="middle">
+    <text x="700.0" y="493.6" font-size="32.0" fill="#efeadf" letter-spacing="1">SELECTED PERFORMANCE</text>
+    <text x="700.0" y="537.696" font-size="19.8" fill="#9c9686" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" letter-spacing="2.5">PHOTOGRAPHY / VIDEO PLACEHOLDER</text>
+  </g>
+</svg>

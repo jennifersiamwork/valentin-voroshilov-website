@@ -1,0 +1,27 @@
+{
+  "categories": [
+    { "key": "all", "label": "All" },
+    { "key": "weddings", "label": "Weddings" },
+    { "key": "corporate", "label": "Corporate" },
+    { "key": "concerts", "label": "Concerts" },
+    { "key": "events", "label": "Events" },
+    { "key": "bts", "label": "Behind the Scenes" }
+  ],
+  "items": [
+    { "id": "g1", "category": "weddings", "size": "lg", "image": "/assets/images/ph/gallery-01.svg", "caption": "Wedding Ceremony — Placeholder" },
+    { "id": "g2", "category": "corporate", "size": "sm", "image": "/assets/images/ph/gallery-02.svg", "caption": "Corporate Reception — Placeholder" },
+    { "id": "g3", "category": "concerts", "size": "sm", "image": "/assets/images/ph/gallery-03.svg", "caption": "Concert Performance — Placeholder" },
+    { "id": "g4", "category": "weddings", "size": "md", "image": "/assets/images/ph/gallery-04.svg", "caption": "Wedding Reception — Placeholder" },
+    { "id": "g5", "category": "bts", "size": "sm", "image": "/assets/images/ph/gallery-05.svg", "caption": "Behind the Scenes — Placeholder" },
+    { "id": "g6", "category": "events", "size": "lg", "image": "/assets/images/ph/gallery-06.svg", "caption": "Private Event — Placeholder" },
+    { "id": "g7", "category": "corporate", "size": "sm", "image": "/assets/images/ph/gallery-07.svg", "caption": "Brand Activation — Placeholder" },
+    { "id": "g8", "category": "weddings", "size": "sm", "image": "/assets/images/ph/gallery-08.svg", "caption": "First Dance — Placeholder" },
+    { "id": "g9", "category": "concerts", "size": "md", "image": "/assets/images/ph/gallery-09.svg", "caption": "Concert Performance — Placeholder" },
+    { "id": "g10", "category": "bts", "size": "sm", "image": "/assets/images/ph/gallery-10.svg", "caption": "Rehearsal — Placeholder" },
+    { "id": "g11", "category": "events", "size": "sm", "image": "/assets/images/ph/gallery-11.svg", "caption": "Hotel Event — Placeholder" },
+    { "id": "g12", "category": "corporate", "size": "md", "image": "/assets/images/ph/gallery-12.svg", "caption": "Gala Dinner — Placeholder" },
+    { "id": "g13", "category": "weddings", "size": "sm", "image": "/assets/images/ph/gallery-13.svg", "caption": "Cocktail Hour — Placeholder" },
+    { "id": "g14", "category": "events", "size": "sm", "image": "/assets/images/ph/gallery-14.svg", "caption": "Private Celebration — Placeholder" },
+    { "id": "g15", "category": "bts", "size": "md", "image": "/assets/images/ph/gallery-15.svg", "caption": "Behind the Scenes — Placeholder" }
+  ]
+}

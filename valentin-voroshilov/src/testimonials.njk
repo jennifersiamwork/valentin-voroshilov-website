@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: "Testimonials | Valentin Voroshilov, Violinist"
+description: "Client testimonials for violinist Valentin Voroshilov, from weddings, corporate events and private celebrations. Placeholder spaces reserved for verified client feedback."
+permalink: /testimonials/
+bodyClass: page-testimonials
+eyebrow: "Testimonials"
+headline: "What Clients Say"
+lead: "Verified feedback from event planners, hosts and organizers will appear here as it is collected."
+headerImage: "/assets/images/ph/testimonials-header.svg"
+---
+
+{% include "partials/page-header.njk" %}
+
+<section class="section">
+  <div class="container">
+    <div class="testimonial-grid reveal-group" data-reveal-group>
+      {%- for t in testimonials %}
+      <div class="testimonial-card reveal-child {% if t.isPlaceholder %}is-placeholder{% endif %}">
+        {%- if t.isPlaceholder %}
+        <p class="testimonial-quote">"Client testimonial placeholder — a direct quote from an event planner, host, or organizer will be added here once received."</p>
+        <div class="testimonial-foot">
+          <div class="testimonial-avatar" aria-hidden="true">?</div>
+          <div>
+            <div class="testimonial-name">Client Name — Placeholder</div>
+            <div class="testimonial-role">{{ t.eventType }} · Location Placeholder</div>
+          </div>
+        </div>
+        {%- else %}
+        <p class="testimonial-quote">&ldquo;{{ t.quote }}&rdquo;</p>
+        <div class="testimonial-foot">
+          <div class="testimonial-avatar">
+            {%- if t.photo %}<img src="{{ t.photo }}" alt="{{ t.clientName }}">{% else %}{{ t.clientName | first }}{% endif %}
+          </div>
+          <div>
+            <div class="testimonial-name">{{ t.clientName }}</div>
+            <div class="testimonial-role">{{ t.eventType }}{% if t.location %} · {{ t.location }}{% endif %}</div>
+          </div>
+        </div>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    <p class="placeholder-note" style="margin-top: var(--space-4);">No testimonials have been published yet. Each card above is a placeholder — add real client quotes to <code>src/_data/testimonials.json</code> to replace them.</p>
+  </div>
+</section>
+
+{% include "partials/cta-band.njk" %}

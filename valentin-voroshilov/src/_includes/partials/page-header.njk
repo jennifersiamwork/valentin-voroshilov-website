@@ -1,0 +1,10 @@
+<header class="page-header">
+  <div class="page-header-media">
+    <img src="{{ headerImage or '/assets/images/ph/about-header.svg' }}" alt="" />
+  </div>
+  <div class="container">
+    {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+    <h1>{{ headline or title }}</h1>
+    {%- if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  </div>
+</header>

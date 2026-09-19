@@ -1,0 +1,40 @@
+<header class="site-header site-header--transparent" data-site-header>
+  <div class="container">
+    <a href="/" class="brand">
+      {{ site.shortTitle }}
+      <small>{{ site.role }}</small>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        {%- for item in site.nav %}
+        <li><a href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/contact/" class="btn btn-primary nav-book">{{ site.bookingCtaLabel }}</a>
+      <button type="button" class="nav-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+  <nav aria-label="Mobile">
+    <ul>
+      {%- for item in site.nav %}
+      <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="/contact/" class="btn btn-primary">{{ site.bookingCtaLabel }}</a>
+    <div class="mobile-social">
+      <a href="{{ site.instagramUrl }}" target="_blank" rel="noopener">Instagram</a>
+      <a href="{{ site.tiktokUrl }}" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</div>

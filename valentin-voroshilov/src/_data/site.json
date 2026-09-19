@@ -1,0 +1,43 @@
+{
+  "name": "Valentin Voroshilov",
+  "title": "Valentin Voroshilov — Violinist",
+  "shortTitle": "Valentin Voroshilov",
+  "role": "Violinist",
+  "tagline": "Classically trained violinist based in Koh Samui, performing worldwide.",
+  "description": "Valentin Voroshilov is a classically trained violinist based in Koh Samui, Thailand, performing at weddings, corporate events, private celebrations and special occasions worldwide.",
+  "url": "https://www.valentinvoroshilov.com",
+  "locationCity": "Koh Samui",
+  "locationCountry": "Thailand",
+  "availability": "Available for performances worldwide",
+  "email": "PLACEHOLDER — add booking email address",
+  "emailHref": "mailto:PLACEHOLDER@example.com",
+  "phone": "PLACEHOLDER — add phone / WhatsApp number",
+  "whatsappHref": "https://wa.me/PLACEHOLDER",
+  "instagramHandle": "@violin_valentin",
+  "instagramUrl": "https://www.instagram.com/violin_valentin",
+  "tiktokHandle": "PLACEHOLDER — add TikTok @handle",
+  "tiktokUrl": "https://www.tiktok.com/@PLACEHOLDER",
+  "youtubeUrl": "PLACEHOLDER — add YouTube channel URL if applicable",
+  "facebookUrl": "PLACEHOLDER — add Facebook page URL if applicable",
+  "bookingCtaLabel": "Book Valentin",
+  "credentials": {
+    "education": "St. Petersburg Conservatory",
+    "educationFull": "Rimsky-Korsakov St. Petersburg Conservatory",
+    "educationYears": "Approx. 8 years of study",
+    "experience": "15+ Years",
+    "experienceLabel": "Professional Experience",
+    "events": "2,000+",
+    "eventsLabel": "Events Worldwide",
+    "audience": "120K+",
+    "audienceLabel": "TikTok Audience"
+  },
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Performances", "url": "/performances/" },
+    { "label": "Gallery", "url": "/gallery/" },
+    { "label": "Previous Work", "url": "/previous-work/" },
+    { "label": "Testimonials", "url": "/testimonials/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}

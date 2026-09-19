@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-label="YOUR NEXT EVENT placeholder image">
+  <defs>
+    <linearGradient id="g212" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b17"/>
+      <stop offset="100%" stop-color="#0a0a09"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g212)"/>
+  <circle cx="952.0" cy="342.0" r="252.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="952.0" cy="342.0" r="396.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="952.0" cy="342.0" r="540.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" />
+  <rect x="0.5" y="0.5" width="1399" height="899" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1"/>
+  <g font-family="Georgia, 'DejaVu Serif', serif" text-anchor="middle">
+    <text x="700.0" y="444.24" font-size="28.8" fill="#efeadf" letter-spacing="1">YOUR NEXT EVENT</text>
+    <text x="700.0" y="483.9264" font-size="17.9" fill="#9c9686" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" letter-spacing="2.5">ADD PHOTOGRAPHY WHEN AVAILABLE</text>
+  </g>
+</svg>

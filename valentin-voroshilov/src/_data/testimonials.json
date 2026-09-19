@@ -1,0 +1,6 @@
+[
+  { "id": "t1", "quote": "", "clientName": "", "eventType": "Wedding", "location": "", "photo": null, "isPlaceholder": true },
+  { "id": "t2", "quote": "", "clientName": "", "eventType": "Corporate Event", "location": "", "photo": null, "isPlaceholder": true },
+  { "id": "t3", "quote": "", "clientName": "", "eventType": "Private Event", "location": "", "photo": null, "isPlaceholder": true },
+  { "id": "t4", "quote": "", "clientName": "", "eventType": "Hotel / Resort", "location": "", "photo": null, "isPlaceholder": true }
+]

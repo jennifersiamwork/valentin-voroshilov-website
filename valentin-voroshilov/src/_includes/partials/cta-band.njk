@@ -1,0 +1,13 @@
+<section class="section section--dark cta-band reveal" data-reveal>
+  <div class="container container--narrow">
+    <p class="eyebrow eyebrow--center">{{ ctaEyebrow or "Availability" }}</p>
+    <h2>{{ ctaHeadline or "Bring live violin to your next occasion." }}</h2>
+    {%- if ctaText %}<p class="lead text-muted" style="margin-top: var(--space-3);">{{ ctaText }}</p>{% endif %}
+    <div class="cta-row">
+      <a href="{{ ctaPrimaryUrl or '/contact/' }}" class="btn btn-primary">{{ ctaPrimaryLabel or site.bookingCtaLabel }}</a>
+      {%- if ctaSecondaryUrl != false %}
+      <a href="{{ ctaSecondaryUrl or '/performances/' }}" class="btn btn-secondary">{{ ctaSecondaryLabel or "View Performances" }}</a>
+      {%- endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="GALLERY placeholder image">
+  <defs>
+    <linearGradient id="g370" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b17"/>
+      <stop offset="100%" stop-color="#0a0a09"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g370)"/>
+  <circle cx="816.0" cy="570.0" r="336.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="816.0" cy="570.0" r="528.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" /><circle cx="816.0" cy="570.0" r="720.0" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1" />
+  <rect x="0.5" y="0.5" width="1199" height="1499" fill="none" stroke="rgba(239,234,223,0.18)" stroke-width="1"/>
+  <g font-family="Georgia, 'DejaVu Serif', serif" text-anchor="middle">
+    <text x="600.0" y="742.32" font-size="38.4" fill="#efeadf" letter-spacing="1">GALLERY</text>
+    <text x="600.0" y="795.2352" font-size="23.8" fill="#9c9686" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" letter-spacing="2.5">IMAGE 17 PLACEHOLDER</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="brand">{{ site.shortTitle }}</a>
+        <p>{{ site.tagline }}</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          {%- for item in site.nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Booking</h3>
+        <ul>
+          <li><a href="{{ site.emailHref }}">{{ site.email }}</a></li>
+          <li><a href="{{ site.whatsappHref }}" target="_blank" rel="noopener">{{ site.phone }}</a></li>
+          <li><a href="/contact/">Request a Booking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="{{ site.instagramUrl }}" target="_blank" rel="noopener">Instagram — {{ site.instagramHandle }}</a></li>
+          <li><a href="{{ site.tiktokUrl }}" target="_blank" rel="noopener">TikTok{% if site.tiktokHandle and "PLACEHOLDER" not in site.tiktokHandle %} — {{ site.tiktokHandle }}{% endif %}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ currentYear }} {{ site.name }}. All rights reserved.</span>
+      <span>{{ site.locationCity }}, {{ site.locationCountry }} — {{ site.availability }}</span>
+    </div>
+  </div>
+</footer>

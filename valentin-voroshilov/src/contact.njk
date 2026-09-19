@@ -1,0 +1,159 @@
+---
+layout: layouts/base.njk
+title: "Contact & Bookings | Valentin Voroshilov, Violinist"
+description: "Request a booking with violinist Valentin Voroshilov for your wedding, corporate event, private celebration or special occasion in Thailand or worldwide."
+permalink: /contact/
+bodyClass: page-contact
+eyebrow: "Contact"
+headline: "Book Valentin"
+lead: "Share a few details about your event and Valentin will follow up personally to discuss availability, repertoire and logistics."
+headerImage: "/assets/images/ph/contact-header.svg"
+---
+
+{% include "partials/page-header.njk" %}
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-info reveal" data-reveal>
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Direct Contact</h2>
+        <p class="text-muted">For bookings, availability questions or general inquiries, reach out directly using any of the channels below, or complete the form.</p>
+
+        <div class="contact-channels">
+          <div class="contact-channel">
+            <span class="label">Email</span>
+            <a class="value text-link" href="{{ site.emailHref }}">{{ site.email }}</a>
+          </div>
+          <div class="contact-channel">
+            <span class="label">WhatsApp</span>
+            <a class="value text-link" href="{{ site.whatsappHref }}" target="_blank" rel="noopener">{{ site.phone }}</a>
+          </div>
+          <div class="contact-channel">
+            <span class="label">Instagram</span>
+            <a class="value text-link" href="{{ site.instagramUrl }}" target="_blank" rel="noopener">{{ site.instagramHandle }}</a>
+          </div>
+          <div class="contact-channel">
+            <span class="label">TikTok</span>
+            <a class="value text-link" href="{{ site.tiktokUrl }}" target="_blank" rel="noopener">{{ site.tiktokHandle }}</a>
+          </div>
+        </div>
+
+        <p class="placeholder-note" style="margin-top: var(--space-4);">Email address, phone/WhatsApp number and TikTok handle above are placeholders — update <code>src/_data/site.json</code> with final booking contact details.</p>
+
+        <p class="avail-note" style="margin-top: var(--space-5);"><span class="badge-dot"></span> {{ site.availability }}</p>
+      </div>
+
+      <div class="contact-form-wrap reveal" data-reveal>
+        <form
+          name="booking-inquiry"
+          method="POST"
+          action="/thank-you/"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          data-booking-form
+        >
+          <input type="hidden" name="form-name" value="booking-inquiry">
+          <p class="hp-field">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="eventDate">Event Date</label>
+              <input id="eventDate" name="event_date" type="date">
+            </div>
+
+            <div class="form-field">
+              <label for="eventLocation">Event Location</label>
+              <input id="eventLocation" name="event_location" type="text" placeholder="Venue, city, country">
+            </div>
+            <div class="form-field">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" name="event_type">
+                <option value="">Select an event type</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Private Event</option>
+                <option>Hotel / Resort</option>
+                <option>Concert</option>
+                <option>Brand Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="guests">Number of Guests</label>
+              <input id="guests" name="guest_count" type="text" inputmode="numeric" placeholder="Approximate number">
+            </div>
+            <div class="form-field">
+              <label for="duration">Performance Duration</label>
+              <select id="duration" name="performance_duration">
+                <option value="">Select duration</option>
+                <option>Under 30 minutes</option>
+                <option>30–60 minutes</option>
+                <option>1–2 hours</option>
+                <option>2+ hours / full event</option>
+                <option>Not sure — need guidance</option>
+              </select>
+            </div>
+
+            <div class="form-field full">
+              <label for="lookingFor">What Are You Looking For?</label>
+              <select id="lookingFor" name="looking_for">
+                <option value="">Select the closest fit</option>
+                <option>Wedding ceremony &amp; reception</option>
+                <option>Corporate or brand event entertainment</option>
+                <option>Private celebration</option>
+                <option>Hotel / resort residency</option>
+                <option>Concert or live collaboration</option>
+                <option>Not sure — open to suggestions</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="budget">Budget Range <span class="text-muted">(optional)</span></label>
+              <input id="budget" name="budget_range" type="text" placeholder="If helpful to share">
+            </div>
+            <div class="form-field">
+              <label for="hearAbout">How Did You Hear About Valentin? <span class="text-muted">(optional)</span></label>
+              <input id="hearAbout" name="referral_source" type="text">
+            </div>
+
+            <div class="form-field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us more about your event, timeline and any specific requests."></textarea>
+            </div>
+          </div>
+
+          <p class="form-note">Fields left blank can be discussed later — sharing what you know now helps Valentin respond with relevant availability and repertoire suggestions.</p>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Request a Booking</button>
+          </div>
+        </form>
+
+        <div class="form-success" data-form-success hidden>
+          <p class="eyebrow eyebrow--center">Thank You</p>
+          <h3>Your inquiry has been received.</h3>
+          <p class="text-muted">Valentin will follow up personally as soon as possible. In the meantime, feel free to reach out directly via WhatsApp or Instagram.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

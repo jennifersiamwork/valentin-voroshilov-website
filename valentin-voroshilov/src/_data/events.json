@@ -1,0 +1,24 @@
+[
+  {
+    "id": "lepas-l6",
+    "eventName": "LEPAS L6 Presentation Event",
+    "date": "2026 — exact date to be confirmed",
+    "location": "Thailand",
+    "eventType": "Brand Events",
+    "description": "Valentin performed at the presentation and release event for the LEPAS L6 in Thailand, performing alongside an orchestra.",
+    "image": "/assets/images/ph/event-lepas-l6.svg",
+    "video": null,
+    "isTemplate": false
+  },
+  {
+    "id": "template-next-event",
+    "eventName": "Your Next Event Here",
+    "date": "Add date",
+    "location": "Add location",
+    "eventType": "Corporate",
+    "description": "This is a placeholder card showing how future events will appear. Duplicate this entry in events.json and replace the fields to add a new project — event name, date, location, event type, description, photo and video.",
+    "image": "/assets/images/ph/event-future.svg",
+    "video": null,
+    "isTemplate": true
+  }
+]

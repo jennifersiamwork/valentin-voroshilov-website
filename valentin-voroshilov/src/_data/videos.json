@@ -1,0 +1,8 @@
+[
+  { "id": "v1", "platform": "Instagram", "category": "Weddings", "title": "Wedding Performance", "embedUrl": null, "orientation": "vertical" },
+  { "id": "v2", "platform": "TikTok", "category": "Live Collaboration", "title": "DJ + Violin Set", "embedUrl": null, "orientation": "vertical" },
+  { "id": "v3", "platform": "YouTube", "category": "Corporate", "title": "Corporate Event Highlight", "embedUrl": null, "orientation": "horizontal" },
+  { "id": "v4", "platform": "Uploaded Video", "category": "Concert", "title": "Concert Performance", "embedUrl": null, "orientation": "horizontal" },
+  { "id": "v5", "platform": "Instagram", "category": "Behind the Scenes", "title": "Rehearsal Moment", "embedUrl": null, "orientation": "vertical" },
+  { "id": "v6", "platform": "TikTok", "category": "Events", "title": "Private Event Performance", "embedUrl": null, "orientation": "vertical" }
+]

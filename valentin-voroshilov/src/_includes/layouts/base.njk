@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- include "partials/seo.njk" %}
+  <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {%- include "partials/schema-person.njk" %}
+  {%- include "partials/schema-breadcrumb.njk" %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  {%- include "partials/nav.njk" %}
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  {%- include "partials/footer.njk" %}
+
+  <div class="mobile-book-bar" aria-hidden="false">
+    <a href="{{ site.whatsappHref }}" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="/contact/" class="is-primary">{{ site.bookingCtaLabel }}</a>
+  </div>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
