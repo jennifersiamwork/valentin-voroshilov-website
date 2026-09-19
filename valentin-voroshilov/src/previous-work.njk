@@ -28,9 +28,15 @@ headerImage: "/assets/images/ph/previous-work-header.svg"
       {%- for event in events %}
       <div class="event-row {% if loop.index0 is odd %}reverse{% endif %} {% if event.isTemplate %}is-template{% endif %}" data-category="{{ event.eventType }}">
         <div class="event-media">
-          <div class="media-frame ratio-landscape {% if not event.isTemplate %}hover-zoom{% endif %}">
-            <img src="{{ event.image }}" alt="{{ event.eventName }} — photography placeholder" loading="lazy" width="1400" height="900">
-          </div>
+        {%- if event.video %}
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/{{ event.video }}" title="{{ event.eventName }}" loading="lazy" allowfullscreen></iframe>
+        </div>
+        {%- else %}
+        <div class="media-frame ratio-landscape {% if not event.isTemplate %}hover-zoom{% endif %}">
+          <img src="{{ event.image }}" alt="{{ event.eventName }} — photography placeholder" loading="lazy" width="1400" height="900">
+        </div>
+        {%- endif %}
         </div>
         <div class="event-body">
           <p class="eyebrow">{{ event.eventType }} {% if event.date %}&middot; {{ event.date }}{% endif %}</p>
